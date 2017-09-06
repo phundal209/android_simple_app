@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="66dp">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        tools:src="@mipmap/ic_launcher"
+        android:id="@+id/profile_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/postContainerLayout"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_toEndOf="@+id/profile_image">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_count"
+            tools:text="9"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_count_label"
+            android:text="@string/posts"
+            tools:text="posts"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/followersContainerLayout"
+        android:layout_toRightOf="@+id/postContainerLayout"
+        android:layout_toEndOf="@+id/postContainerLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/follower_count"
+            tools:text="503"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/followers_label"
+            android:text="@string/followers"
+            tools:text="followers"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@+id/followersContainerLayout"
+        android:layout_toEndOf="@+id/followersContainerLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/following_count"
+            tools:text="372"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/following_label"
+            android:text="@string/following"
+            tools:text="following"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        tools:text="Paul Hundal"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        tools:text="Engineer | San Francisco"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="4dp"
+        android:id="@+id/dividor"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dividor"
+        android:layout_marginTop="4dp"
+        android:id="@+id/recycler"/>
+</RelativeLayout>

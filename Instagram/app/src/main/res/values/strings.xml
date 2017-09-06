@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Instagram App</string>
+    <string name="instagram_authorize_failure">Instagram auth failure</string>
+    <string name="logout">Logout</string>
+    <string name="following">following</string>
+    <string name="followers">followers</string>
+    <string name="posts">posts</string>
+</resources>
